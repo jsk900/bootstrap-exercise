@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+}
+
+.jumbotron {
+  background-image: url(./images/spain-hi.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  width: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.jumbotron .display-4 {
+  color: darkred;
+  text-shadow: 2px 2px 2px #1f1e1e;
+  font-weight: 800;
+}
+
+.navbar-toggler {
+  margin-top: -120px;
+}
+
+.nav {
+  margin-top: 15px;
+}
+
+.nav .nav-link {
+  color: #2b0303;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#carouselExampleSlidesOnly {
+  margin: 0;
+  padding: 0;
+}
+
+#carouselExampleSlidesOnly .carousel-inner {
+  padding: 50px;
+}
+
+#carouselExampleSlidesOnly .carousel-inner img {
+  -webkit-box-shadow: 5px 5px 5px #1f1e1e;
+          box-shadow: 5px 5px 5px #1f1e1e;
+}
+
+.formDiv {
+  width: 100%;
+  background-color: bisque;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.formDiv h3 {
+  padding: 10px 30px;
+}
+
+.formDiv .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px 30px;
+}
+
+.formDiv .form-group .form-text {
+  padding-left: 30px;
+}
+
+.formDiv .form-group label {
+  font-size: 0.8em;
+}
+
+.formDiv .btn {
+  width: 150px;
+  height: 50px;
+  background-color: darkred;
+  color: blanchedalmond;
+  margin: 0 0 5px 30px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #ffd543;
+  height: 50px;
+}
+
+footer p {
+  padding: 15px 0 0 30px;
+  color: darkred;
+}
+/*# sourceMappingURL=styles.css.map */
