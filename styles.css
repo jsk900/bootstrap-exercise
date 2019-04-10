@@ -42,6 +42,10 @@ body {
   font-weight: bold;
 }
 
+.nav a:hover {
+  color: yellow;
+}
+
 #carouselExampleSlidesOnly {
   margin: 0;
   padding: 0;
