@@ -21,10 +21,18 @@ body {
   padding-bottom: 0;
   margin-bottom: 0;
 
-  .display-4 {
-    color: darkred;
-    text-shadow: 2px 2px 2px #1f1e1e;
-    font-weight: 800;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    h3 {
+      color: darkred;
+      text-shadow: 2px 2px 2px #1f1e1e;
+      padding-bottom: 30px;
+      font-size: 2em;
+      font-weight: 800;
+    }
   }
 }
 
@@ -51,7 +59,7 @@ body {
   padding: 0;
 
   .carousel-inner {
-    padding: 50px;
+    padding: 50px 150px;
 
     img {
       box-shadow: 5px 5px 5px #1f1e1e;
@@ -60,12 +68,16 @@ body {
 }
 
 .formDiv {
-  width: 100%;
-  background-color: bisque;
+  width: 60%;
+  height: 40%;
+  margin-left: 20%;
+  margin-bottom: 5%;
+  background-color: #df8210;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
 
   h3 {
     padding: 10px 30px;
@@ -78,10 +90,18 @@ body {
 
     .form-text {
       padding-left: 30px;
+      color: #272626;
+    }
+
+    .form-control {
+      margin-left: 15px;
+      width: 200px;
+      height: 30px;
     }
 
     label {
       font-size: 0.8em;
+      padding-top: 5px;
     }
   }
   .btn {
@@ -89,7 +109,7 @@ body {
     height: 50px;
     background-color: darkred;
     color: blanchedalmond;
-    margin: 0 0 5px 30px;
+    margin: 0 0 5px 25px;
     border-radius: 10px;
   }
 }
