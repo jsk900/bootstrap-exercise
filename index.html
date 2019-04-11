@@ -8,19 +8,15 @@
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h3 class="display-4">Spain</h3>
-      </div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent ml-auto">
+    <!-- Navbar and header bootstrap code start -->
+    <div class="jumbotron jumbotron-fluid mb-auto">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent mr-auto">
         <button
-          class="navbar-toggler ml-auto"
+          class="navbar-toggler mr-auto"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -32,94 +28,107 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav ml-auto">
+          <ul class="nav mr-auto">
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://en.wikipedia.org/wiki/Spanish_cuisine"
-                target="blank"
-                >Gastronomy</a
-              >
+              <a class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://en.wikipedia.org/wiki/History_of_Spain"
-                target="blank"
+              <a class="nav-link" href="./gastronomy.html">Gastronomy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./history.html" target="blank"
                 >History</a
               >
             </li>
 
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://en.wikipedia.org/wiki/Culture_of_Spain"
-                target="blank"
+              <a class="nav-link" href="./culture.html" target="blank"
                 >Culture</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./newsletter.html">Newsletter</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
+    <!-- Navbar and header Bootstrap code end -->
 
-    <div
-      id="carouselExampleSlidesOnly"
-      class="carousel slide carousel-fade"
-      data-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./images/spain1.jpg" class="d-block w-100" alt="Spain" />
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <!-- Carousel Bootstrap code start -->
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide carousel-fade"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/spain1.jpg"
+                  class="d-block w-100"
+                  alt="Spain"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/spain2.jpg"
+                  class="d-block w-100"
+                  alt="Spain"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/spain3.jpg"
+                  class="d-block w-100"
+                  alt="Spain"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/spain4.jpg"
+                  class="d-block w-100"
+                  alt="Spain"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Bootstrap code end -->
         </div>
-        <div class="carousel-item">
-          <img src="./images/spain2.jpg" class="d-block w-100" alt="Spain" />
-        </div>
-        <div class="carousel-item">
-          <img src="./images/spain3.jpg" class="d-block w-100" alt="Spain" />
-        </div>
-        <div class="carousel-item">
-          <img src="./images/spain4.jpg" class="d-block w-100" alt="Spain" />
+        <div class="col-md">
+          <p>
+            <span>Spain's</span> story is one of Europe's grand epics. It
+            embraces the great struggles between Muslims and Christians of the
+            Middle Ages, one of the world's biggest-ever empires, and, in the
+            20th century, civil war, dictatorship and a stunning return to
+            democracy. As you travel around the country it's delightfully easy
+            to get in touch with Spain's fascinating past through its countless
+            well-preserved monuments and historical sites, and excellent
+            museums. In Spain's finest hour, at a time when it ruled large
+            swaths of the world, the country's rulers sowed the seeds of its
+            disintegration. So much of the fabulous wealth that accrued from
+            Spain's American and other colonies was squandered on lavish royal
+            lifestyles and on indulgences that did little to better the lives of
+            ordinary Spaniards. The result was a deeply divided country that
+            would for centuries face repeated battles of royal succession and
+            its fair share of external wars, while the bulk of the population
+            got poorer and poorer.
+          </p>
         </div>
       </div>
     </div>
-    <div class="formDiv">
-      <h3>Please enter your Email to receive our Newsletter</h3>
-      <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Enter email"
-          />
-          <small id="emailHelp" class="form-text"
-            >We'll never share your email with anyone else.</small
-          >
-        </div>
 
-        <button type="submit" class="btn">Submit</button>
-      </form>
-    </div>
+    <!-- Footer start -->
     <footer>
       <p>&copy; Joseph Urbina</p>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Footer end -->
+
+    <!-- Bootstrap cdn's -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>

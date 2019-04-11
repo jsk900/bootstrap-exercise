@@ -9,77 +9,6 @@
 body {
   width: 100%;
   height: 100vh;
-  background-color: aliceblue;
-  font-family: "Montserrat", sans-serif;
-}
-
-.jumbotron {
-  background-image: url(./images/spain-hi.jpg);
-  background-size: contain;
-  background-repeat: repeat;
-  width: 100%;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.jumbotron .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.jumbotron .container h3 {
-  color: darkred;
-  text-shadow: 2px 2px 2px #1f1e1e;
-  padding-bottom: 30px;
-  font-size: 2em;
-  font-weight: 800;
-}
-
-.navbar-toggler {
-  margin-top: -120px;
-}
-
-.nav {
-  margin-top: 15px;
-}
-
-.nav .nav-link {
-  color: #2b0303;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.nav a:hover {
-  color: yellow;
-}
-
-#carouselExampleSlidesOnly {
-  margin: 0;
-  padding: 0;
-}
-
-#carouselExampleSlidesOnly .carousel-inner {
-  padding: 50px 150px;
-}
-
-#carouselExampleSlidesOnly .carousel-inner img {
-  -webkit-box-shadow: 5px 5px 5px #1f1e1e;
-          box-shadow: 5px 5px 5px #1f1e1e;
-}
-
-.formDiv {
-  width: 60%;
-  height: 40%;
-  margin-left: 20%;
-  margin-bottom: 5%;
-  background-color: #df8210;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,61 +16,116 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 20px;
+  background-color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 
-.formDiv h3 {
-  padding: 10px 30px;
+.jumbotron {
+  background-image: url(./images/spain-hi.jpg);
+  background-size: contain;
+  background-repeat: repeat;
 }
 
-.formDiv .form-group {
+.jumbotron .nav {
+  margin-top: 15px;
+}
+
+.jumbotron .nav .nav-link {
+  color: darkred;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+}
+
+.jumbotron .nav .active {
+  color: #272626;
+  font-size: 0.9em;
+}
+
+.jumbotron .nav a:hover:not(.active) {
+  color: #272626;
+  letter-spacing: 0.2em;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.container .formDiv {
+  padding: 10px;
+  background-color: yellow;
+  height: 100%;
+}
+
+.container .formDiv h6 {
+  padding: 10px 20px;
+  height: 10px;
+  text-decoration: underline;
+}
+
+.container .formDiv .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 10px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20%;
 }
 
-.formDiv .form-group .form-text {
-  padding-left: 30px;
+.container .formDiv .form-group .form-text {
+  padding-left: 10px;
   color: #272626;
+  font-size: 0.6em;
 }
 
-.formDiv .form-group .form-control {
-  margin-left: 15px;
+.container .formDiv .form-group .form-control {
+  margin-left: 20px;
+  padding: 0;
   width: 200px;
-  height: 30px;
+  height: 25px;
 }
 
-.formDiv .form-group label {
-  font-size: 0.8em;
-  padding-top: 5px;
-}
-
-.formDiv .btn {
-  width: 150px;
+.container .formDiv .btn {
+  width: 100%;
   height: 50px;
   background-color: darkred;
   color: blanchedalmond;
-  margin: 0 0 5px 25px;
-  border-radius: 10px;
+  margin-top: 23%;
+}
+
+.container .col-md p {
+  color: #272626;
+  font-size: 1em;
+}
+
+.container .col-md p span {
+  font-size: 1.1em;
+  color: darkred;
+  font-weight: bold;
+}
+
+#history {
+  font-size: 0.9em;
 }
 
 footer {
-  background-color: #ffd543;
+  background-color: darkred;
   height: 50px;
 }
 
 footer p {
   padding: 15px 0 0 30px;
-  color: darkred;
+  color: yellow;
 }
 /*# sourceMappingURL=styles.css.map */
