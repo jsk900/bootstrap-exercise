@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -24,7 +30,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span><i class="fas fa-hamburger"></i></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -48,50 +54,45 @@
           </ul>
         </div>
       </nav>
+      <img src="./images/logo.png" alt="Logo" />
     </div>
     <!-- Navbar and header Bootstrap code end -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md">
-          <!-- Form Bootstrap code start -->
-          <div class="formDiv">
-            <h6>Please enter your Email to receive our Newsletter</h6>
-            <form>
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
-                />
-                <small id="emailHelp" class="form-text"
-                  >We'll never share your email with anyone else.</small
-                >
-              </div>
-
-              <button type="submit" class="btn">Submit</button>
-            </form>
+    <section>
+      <!-- Bootstrap container -->
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col">
+            <!-- Form Bootstrap code start -->
+            <div class="formDiv">
+              <h6>Please enter your Email to receive our Newsletter</h6>
+              <form>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                  <small id="emailHelp" class="form-text"
+                    >We'll never share your email with anyone else.</small
+                  >
+                  <button type="submit" class="btn-change8">Submit</button>
+                </div>
+              </form>
+            </div>
+            <!-- Form Bootstrap code end -->
           </div>
-          <!-- Form Bootstrap code end -->
         </div>
-        <div class="col-md">
-          <img
-            src="./images/spain-back.jpg"
-            width="100%"
-            height="100%"
-            alt="Spain"
-          />
-        </div>
-      </div>
-    </div>
+        <!-- Bootstrap container END -->
 
-    <!-- Footer start -->
-    <footer>
-      <p>&copy; Joseph Urbina</p>
-    </footer>
-    <!-- Footer end -->
+        <!-- Footer start -->
+        <footer>
+          <p>&copy; Joseph Urbina</p>
+        </footer>
+        <!-- Footer end -->
+      </div>
+    </section>
 
     <!-- Bootstrap cdn's -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

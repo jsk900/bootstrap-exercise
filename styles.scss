@@ -1,18 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
+// Setup variables
 $colour-aliceblue: aliceblue;
 $colour-darkred: darkred;
+$colour-darkred-opaque: rgba(139, 0, 0, 0.1);
 $colour-yellow: yellow;
+$colour-yellow-opaque: rgba(255, 255, 0, 0.1);
 $colour-shadow: #1f1e1e;
 $colour-form-text: #272626;
 $colour-btn-text: blanchedalmond;
+$colour-footer: #ee3f38;
 
+// Resets
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+// Body styles and settings
 body {
   width: 100%;
   height: 100vh;
@@ -20,13 +26,17 @@ body {
   flex-direction: column;
   background-color: $colour-aliceblue;
   font-family: "Montserrat", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
-
+// Use Bootstrap for header and navbar START
 .jumbotron {
   background-image: url(./images/spain-hi.jpg);
   background-size: contain;
   background-repeat: repeat;
+
+  img {
+    float: right;
+  }
 
   .nav {
     margin-top: 15px;
@@ -49,37 +59,45 @@ body {
     }
   }
 }
+// Jumbotron, navbar END
 
-.container {
+// Section to hold background image for newsletter page
+section {
+  overflow: hidden;
+  width: 100%;
+  height: 75%;
   margin: 0;
   padding: 0;
-  width: 100%;
+  background-image: url(./images/spain-back.jpg);
+  background-size: cover;
+}
+
+// Use Bootstrap container only for forms START
+.container {
+  width: 70%;
   height: 100%;
-  margin: 0 auto;
-  padding: 30px 0;
+  padding-top: 5%;
 
   .formDiv {
-    padding: 10px;
-    background-color: $colour-yellow;
     height: 100%;
+    background-color: $colour-darkred-opaque;
+    border-radius: 50px;
 
     h6 {
-      padding: 10px 20px;
-      height: 10px;
+      color: $colour-btn-text;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+      padding-top: 15px;
       text-decoration: underline;
     }
 
     .form-group {
       display: flex;
+      flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      padding-top: 20%;
-
-      .form-text {
-        padding-left: 10px;
-        color: $colour-form-text;
-        font-size: 0.6em;
-      }
+      padding-top: 5%;
 
       .form-control {
         margin-left: 20px;
@@ -87,39 +105,104 @@ body {
         width: 200px;
         height: 25px;
       }
-    }
 
-    .btn {
-      width: 100%;
-      height: 50px;
-      background-color: $colour-darkred;
-      color: $colour-btn-text;
-      margin-top: 23%;
-    }
-  }
+      .form-control::-webkit-input-placeholder {
+        color: $colour-darkred;
+        padding-left: 5px;
+      }
+      .form-control:-moz-placeholder {
+        color: $colour-darkred;
+        padding-left: 5px;
+      }
+      .form-control::-moz-placeholder {
+        color: $colour-darkred;
+        padding-left: 5px;
+      }
+      .form-control:-ms-input-placeholder {
+        color: $colour-darkred;
+        padding-left: 5px;
+      }
+      .form-control::-ms-input-placeholder {
+        color: $colour-darkred;
+        padding-left: 5px;
+      }
+      .form-text {
+        padding: 10px 0;
+        color: $colour-btn-text;
+        font-size: 0.7em;
+      }
 
-  .col-md p {
-    color: $colour-form-text;
-    font-size: 1em;
-
-    span {
-      font-size: 1.1em;
-      color: $colour-darkred;
-      font-weight: bold;
+      .btn-change8 {
+        height: 50px;
+        width: 200px;
+        background-color: $colour-darkred-opaque;
+        margin: 20px;
+        float: left;
+        border: 0px;
+        color: $colour-btn-text;
+        box-shadow: 0 0 1px $colour-darkred;
+        -webkit-transition-duration: 0.5s;
+        -webkit-box-shadow: 0px 0px 0 0 #31708f inset, 0px 0px 0 0 #31708f inset;
+      }
+      .btn-change8:hover {
+        -webkit-box-shadow: 100px 0px 0 0 $colour-darkred inset,
+          -100px 0px 0 0 $colour-darkred inset;
+      }
     }
   }
 }
-
-#history {
-  font-size: 0.9em;
-}
+// END
 
 footer {
-  background-color: $colour-darkred;
-  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: $colour-footer;
 
   p {
-    padding: 15px 0 0 30px;
+    margin: 0;
+    padding: 15px;
     color: $colour-yellow;
+  }
+}
+
+/* Extra small */
+@media (max-width: 610px) {
+  .nav-link {
+    font-size: 0.5em !important;
+    letter-spacing: normal !important;
+  }
+
+  .active {
+    color: $colour-form-text !important;
+  }
+  a:hover:not(.active) {
+    color: $colour-form-text !important;
+  }
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: 0.3em;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .my-row {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .my-row {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
   }
 }

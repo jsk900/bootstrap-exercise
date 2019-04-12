@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Bootstrap Exercise</title>
+    <title>Spain</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -13,7 +13,8 @@
   </head>
   <body>
     <!-- Navbar and header bootstrap code start -->
-    <div class="jumbotron jumbotron-fluid mb-auto">
+    <div class="jumbotron jumbotron-fluid">
+      <p id="x"></p>
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent mr-auto">
         <button
           class="navbar-toggler mr-auto"
@@ -55,9 +56,9 @@
     </div>
     <!-- Navbar and header Bootstrap code end -->
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md">
+    <div class="my-container">
+      <div class="my-row">
+        <div>
           <!-- Carousel Bootstrap code start -->
           <div
             id="carouselExampleSlidesOnly"
@@ -97,7 +98,7 @@
           </div>
           <!-- Carousel Bootstrap code end -->
         </div>
-        <div class="col-md">
+        <div>
           <p>
             <span>Spain's</span> story is one of Europe's grand epics. It
             embraces the great struggles between Muslims and Christians of the
@@ -108,24 +109,26 @@
             well-preserved monuments and historical sites, and excellent
             museums. In Spain's finest hour, at a time when it ruled large
             swaths of the world, the country's rulers sowed the seeds of its
-            disintegration. So much of the fabulous wealth that accrued from
-            Spain's American and other colonies was squandered on lavish royal
-            lifestyles and on indulgences that did little to better the lives of
-            ordinary Spaniards. The result was a deeply divided country that
-            would for centuries face repeated battles of royal succession and
-            its fair share of external wars, while the bulk of the population
-            got poorer and poorer.
+            disintegration.
           </p>
         </div>
       </div>
+      <div class="row"></div>
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <!-- Footer start -->
+        <div class="card-footer">
+          <p>&copy; Joseph Urbina</p>
+        </div>
+        <!-- Footer end -->
+      </div>
     </div>
-
-    <!-- Footer start -->
-    <footer>
-      <p>&copy; Joseph Urbina</p>
-    </footer>
-    <!-- Footer end -->
-
+    <script>
+      var w = Math.max(
+        document.documentElement.clientWidth,
+        window.innerWidth || 0
+      );
+      var x = (document.getElementById("x").innerHTML = w);
+    </script>
     <!-- Bootstrap cdn's -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

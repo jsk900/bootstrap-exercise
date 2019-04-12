@@ -18,13 +18,17 @@ body {
           flex-direction: column;
   background-color: aliceblue;
   font-family: "Montserrat", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .jumbotron {
   background-image: url(./images/spain-hi.jpg);
   background-size: contain;
   background-repeat: repeat;
+}
+
+.jumbotron img {
+  float: right;
 }
 
 .jumbotron .nav {
@@ -49,24 +53,34 @@ body {
   letter-spacing: 0.2em;
 }
 
-.container {
+section {
+  overflow: hidden;
+  width: 100%;
+  height: 75%;
   margin: 0;
   padding: 0;
-  width: 100%;
+  background-image: url(./images/spain-back.jpg);
+  background-size: cover;
+}
+
+.container {
+  width: 70%;
   height: 100%;
-  margin: 0 auto;
-  padding: 30px 0;
+  padding-top: 5%;
 }
 
 .container .formDiv {
-  padding: 10px;
-  background-color: yellow;
   height: 100%;
+  background-color: rgba(139, 0, 0, 0.1);
+  border-radius: 50px;
 }
 
 .container .formDiv h6 {
-  padding: 10px 20px;
-  height: 10px;
+  color: blanchedalmond;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
   text-decoration: underline;
 }
 
@@ -74,19 +88,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 20%;
-}
-
-.container .formDiv .form-group .form-text {
-  padding-left: 10px;
-  color: #272626;
-  font-size: 0.6em;
+  padding-top: 5%;
 }
 
 .container .formDiv .form-group .form-control {
@@ -96,36 +108,103 @@ body {
   height: 25px;
 }
 
-.container .formDiv .btn {
-  width: 100%;
-  height: 50px;
-  background-color: darkred;
-  color: blanchedalmond;
-  margin-top: 23%;
-}
-
-.container .col-md p {
-  color: #272626;
-  font-size: 1em;
-}
-
-.container .col-md p span {
-  font-size: 1.1em;
+.container .formDiv .form-group .form-control::-webkit-input-placeholder {
   color: darkred;
-  font-weight: bold;
+  padding-left: 5px;
 }
 
-#history {
-  font-size: 0.9em;
+.container .formDiv .form-group .form-control:-moz-placeholder {
+  color: darkred;
+  padding-left: 5px;
+}
+
+.container .formDiv .form-group .form-control::-moz-placeholder {
+  color: darkred;
+  padding-left: 5px;
+}
+
+.container .formDiv .form-group .form-control:-ms-input-placeholder {
+  color: darkred;
+  padding-left: 5px;
+}
+
+.container .formDiv .form-group .form-control::-ms-input-placeholder {
+  color: darkred;
+  padding-left: 5px;
+}
+
+.container .formDiv .form-group .form-text {
+  padding: 10px 0;
+  color: blanchedalmond;
+  font-size: 0.7em;
+}
+
+.container .formDiv .form-group .btn-change8 {
+  height: 50px;
+  width: 200px;
+  background-color: rgba(139, 0, 0, 0.1);
+  margin: 20px;
+  float: left;
+  border: 0px;
+  color: blanchedalmond;
+  -webkit-box-shadow: 0 0 1px darkred;
+          box-shadow: 0 0 1px darkred;
+  -webkit-transition-duration: 0.5s;
+  -webkit-box-shadow: 0px 0px 0 0 #31708f inset, 0px 0px 0 0 #31708f inset;
+}
+
+.container .formDiv .form-group .btn-change8:hover {
+  -webkit-box-shadow: 100px 0px 0 0 darkred inset, -100px 0px 0 0 darkred inset;
 }
 
 footer {
-  background-color: darkred;
-  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ee3f38;
 }
 
 footer p {
-  padding: 15px 0 0 30px;
+  margin: 0;
+  padding: 15px;
   color: yellow;
+}
+
+/* Extra small */
+@media (max-width: 610px) {
+  .nav-link {
+    font-size: 0.5em !important;
+    letter-spacing: normal !important;
+  }
+  .active {
+    color: #272626 !important;
+  }
+  a:hover:not(.active) {
+    color: #272626 !important;
+  }
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: 0.3em;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .my-row {
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .my-row {
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
