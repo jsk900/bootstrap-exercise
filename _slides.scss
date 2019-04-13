@@ -1,0 +1,76 @@
+// Carousel slides
+// Index page start
+.slide1 {
+    @include images($img-spain);
+}
+
+.slide2 {
+    @include images($img-spain1);
+}
+
+.slide3 {
+    @include images($img-spain2);
+}
+
+.slide4 {
+    @include images($img-spain3);
+}
+
+// Index page end
+
+// Gastronomy page start
+.slide5 {
+    @include images($img-gas);
+}
+
+.slide6 {
+    @include images($img-gas1);
+}
+
+.slide7 {
+    @include images($img-gas2);
+}
+
+.slide8 {
+    @include images($img-gas3);
+}
+
+// Gastronomy page end
+
+// Culture page start
+.slide9 {
+    @include images($img-cul);
+}
+
+.slide10 {
+    @include images($img-cul1);
+}
+
+.slide11 {
+    @include images($img-cul2);
+}
+
+.slide12 {
+    @include images($img-cul3);
+}
+
+// Culture page end
+
+// History page start
+.slide13 {
+    @include images($img-his);
+}
+
+.slide14 {
+    @include images($img-his1);
+}
+
+.slide15 {
+    @include images($img-his2);
+}
+
+.slide16 {
+    @include images($img-his3);
+}
+
+// History page end
