@@ -77,7 +77,6 @@ main {
 
 // Use Bootstrap for header and navbar START
 .jumbotron {
-	background-color: $colour-darkblue-opaque;
 	height: 20%;
 
 	img {
@@ -89,21 +88,24 @@ main {
 	.navbar {
 		margin-top: -35px !important;
 
-		.nav-link {
-			color: $colour-yellow;
-			text-transform: uppercase;
-			font-size: 0.8em;
-			letter-spacing: 0.1em;
+		.nav {
+			background-color: $colour-darkblue-opaque;
+
+			.nav-link {
+				color: $colour-text;
+				text-transform: uppercase;
+				font-size: 0.8em;
+				letter-spacing: 0.1em;
+			}
 		}
 
 		.active {
-			color: $colour-red;
-			background-color: $colour-darkblue-opaque;
+			color: $colour-general !important;
 			font-size: 0.9em;
 		}
 
 		.nav-link:hover {
-			color: $colour-red;
+			color: $colour-general;
 		}
 
 		/* Animate the links */
@@ -112,8 +114,8 @@ main {
 			display: block;
 			width: 0;
 			height: 3px;
-			background-color: $colour-red;
-			color: $colour-red;
+			background-color: $colour-general;
+			color: $colour-general;
 			transition: width 0.3s;
 		}
 

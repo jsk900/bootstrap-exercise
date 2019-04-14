@@ -334,7 +334,6 @@ main .slider .slide .blurb p {
 }
 
 .jumbotron {
-  background-color: rgba(5, 82, 108, 0.5);
   height: 20%;
 }
 
@@ -350,21 +349,24 @@ main .slider .slide .blurb p {
   /* Activate animation on hover */
 }
 
-.jumbotron .navbar .nav-link {
-  color: yellow;
+.jumbotron .navbar .nav {
+  background-color: rgba(5, 82, 108, 0.5);
+}
+
+.jumbotron .navbar .nav .nav-link {
+  color: #1f1e1e;
   text-transform: uppercase;
   font-size: 0.8em;
   letter-spacing: 0.1em;
 }
 
 .jumbotron .navbar .active {
-  color: red;
-  background-color: rgba(5, 82, 108, 0.5);
+  color: azure !important;
   font-size: 0.9em;
 }
 
 .jumbotron .navbar .nav-link:hover {
-  color: red;
+  color: azure;
 }
 
 .jumbotron .navbar .nav-link:after {
@@ -372,8 +374,8 @@ main .slider .slide .blurb p {
   display: block;
   width: 0;
   height: 3px;
-  background-color: red;
-  color: red;
+  background-color: azure;
+  color: azure;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
 }
