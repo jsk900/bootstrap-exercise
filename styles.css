@@ -147,7 +147,7 @@
 
 .container .formDiv {
   height: 100%;
-  background-color: rgba(5, 82, 108, 0.5);
+  background-color: rgba(5, 82, 108, 0.7);
   border-radius: 50px;
 }
 
@@ -217,7 +217,7 @@
 .container .formDiv .form-group .btn-change8 {
   height: 50px;
   width: 200px;
-  background-color: rgba(5, 82, 108, 0.5);
+  background-color: rgba(5, 82, 108, 0.7);
   margin: 20px;
   float: left;
   border: 0px;
@@ -309,7 +309,7 @@ main .slider .slide .blurb {
   bottom: 100px;
   left: 60px;
   right: 60px;
-  background-color: rgba(5, 82, 108, 0.5);
+  background-color: rgba(5, 82, 108, 0.7);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -350,7 +350,7 @@ main .slider .slide .blurb p {
 }
 
 .jumbotron .navbar .nav {
-  background-color: rgba(5, 82, 108, 0.5);
+  background-color: rgba(5, 82, 108, 0.7);
 }
 
 .jumbotron .navbar .nav .nav-link {
@@ -401,7 +401,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(5, 82, 108, 0.5);
+  background-color: rgba(5, 82, 108, 0.7);
 }
 
 footer p {

@@ -1,5 +1,5 @@
 // Setup variables
-$colour-darkblue-opaque: rgba(5, 82, 108, 0.5);
+$colour-darkblue-opaque: rgba(5, 82, 108, 0.7);
 $colour-text: #1f1e1e;
 $colour-general: azure;
 $colour-blue: #05526c;
@@ -25,6 +25,6 @@ $img-his3: "./images/his3.jpg";
 
 // Setup mixin for the carousel slides
 @mixin images($img) {
-	background-image: url($img);
-	background-size: cover;
+  background-image: url($img);
+  background-size: cover;
 }
