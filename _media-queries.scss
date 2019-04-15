@@ -1,32 +1,35 @@
 // Navigation
 @media (max-width: 991px) and (min-width: 360px) {
+  .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+  }
+  .nav-link {
+    font-size: 0.5em !important;
+    letter-spacing: normal !important;
+  }
 
-    .nav-link {
-        font-size: 0.5em !important;
-        letter-spacing: normal !important;
-    }
-
-    h6 {
-        font-size: 0.7em !important;
-    }
+  h6 {
+    font-size: 0.6em !important;
+  }
 }
 
 // Carousel
 @media (max-width: 768px) {
-    main .slider .slide .blurb {
-        bottom: 70px;
-        left: 50px;
-        right: 50px;
-        padding: 20px;
+  main .slider .slide .blurb {
+    bottom: 70px !important;
+    left: 50px !important;
+    right: 50px !important;
+    padding: 20px !important;
 
-        h2 {
-            margin: 0 0 0 10px;
-            font-size: 1.1em;
-        }
-
-        p {
-            margin: 0 0 0 10px;
-            font-size: 0.8em;
-        }
+    h2 {
+      margin: 0 0 0 10px !important;
+      font-size: 0.9em !important;
     }
+
+    p {
+      margin: 0 0 0 10px !important;
+      font-size: 0.7em !important;
+    }
+  }
 }
