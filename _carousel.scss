@@ -1,0 +1,45 @@
+// Carousel logic start
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  float: left;
+  animation: animate 40s infinite ease-in-out;
+
+  .slide {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+
+    .blurb {
+      position: absolute;
+      bottom: 100px;
+      left: 60px;
+      right: 60px;
+      background-color: $colour-darkblue-opaque;
+      transition: 0.5s;
+
+      h2 {
+        margin: 5px 0 0 30px;
+        padding: 0;
+        color: $colour-general;
+        font-size: 2em;
+        text-decoration: underline;
+        transition: 0.5s;
+      }
+
+      p {
+        margin: 5px 0 0 30px;
+        padding: 0;
+        color: $colour-general;
+        font-size: 1em;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+// Carousel logic end

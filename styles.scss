@@ -4,6 +4,8 @@
 @import "./animations.scss";
 @import "./forms.scss";
 @import "./media-queries.scss";
+@import "./carousel.scss";
+@import "./links.scss";
 
 // Resets
 * {
@@ -18,7 +20,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font;
 }
 
 // Main section to hold carousels
@@ -27,52 +29,6 @@ main {
   overflow: hidden;
   width: 100%;
   height: 100%;
-
-  // Carousel logic start
-  .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500%;
-    height: 100%;
-    float: left;
-    animation: animate 40s infinite ease-in-out;
-
-    .slide {
-      position: relative;
-      width: 20%;
-      height: 100%;
-      float: left;
-
-      .blurb {
-        position: absolute;
-        bottom: 100px;
-        left: 60px;
-        right: 60px;
-        background-color: $colour-darkblue-opaque;
-        transition: 0.5s;
-
-        h2 {
-          margin: 5px 0 0 30px;
-          padding: 0;
-          color: $colour-general;
-          font-size: 2em;
-          text-decoration: underline;
-          transition: 0.5s;
-        }
-
-        p {
-          margin: 5px 0 0 30px;
-          padding: 0;
-          color: $colour-general;
-          font-size: 1em;
-          transition: 0.5s;
-        }
-      }
-    }
-  }
-
-  // Carousel logic end
 }
 
 // Use Bootstrap for header and navbar START
@@ -83,47 +39,6 @@ main {
     position: absolute;
     top: 30px;
     right: 3%;
-  }
-
-  .navbar {
-    margin-top: -35px !important;
-
-    .nav {
-      background-color: $colour-darkblue-opaque;
-
-      .nav-link {
-        color: $colour-text;
-        text-transform: uppercase;
-        font-size: 0.8em;
-        letter-spacing: 0.1em;
-      }
-    }
-
-    .active {
-      color: $colour-general !important;
-      font-size: 0.9em;
-    }
-
-    .nav-link:hover {
-      color: $colour-general;
-    }
-
-    /* Animate the links */
-    .nav-link:after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 3px;
-      background-color: $colour-general;
-      color: $colour-general;
-      transition: width 0.3s;
-    }
-
-    /* Activate animation on hover */
-    .nav-link:not(.active):hover:after {
-      width: 100%;
-      transition: width 0.3s;
-    }
   }
 }
 
