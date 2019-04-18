@@ -1,16 +1,22 @@
 // Navigation
-@media (max-width: 991px) and (min-width: 360px) {
-  .navbar-toggler {
-    border: none !important;
-    outline: none !important;
-  }
-  .nav-link {
-    font-size: 0.5em !important;
-    letter-spacing: normal !important;
-  }
+@media (max-width: 991px) and (min-width: 320px) {
+  nav {
+    width: 100px !important;
+    display: flex !important;
+    flex-direction: column !important;
 
-  h6 {
-    font-size: 0.6em !important;
+    .navbar-toggler {
+      border: none !important;
+      outline: none !important;
+    }
+    .nav-link {
+      font-size: 0.5em !important;
+      letter-spacing: normal !important;
+    }
+
+    h6 {
+      font-size: 0.6em !important;
+    }
   }
 }
 

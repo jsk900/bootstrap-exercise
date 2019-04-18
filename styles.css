@@ -232,16 +232,26 @@
   -webkit-box-shadow: 100px 0px 0 0 #05526c inset, -100px 0px 0 0 #05526c inset;
 }
 
-@media (max-width: 991px) and (min-width: 360px) {
-  .navbar-toggler {
+@media (max-width: 991px) and (min-width: 320px) {
+  nav {
+    width: 100px !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  nav .navbar-toggler {
     border: none !important;
     outline: none !important;
   }
-  .nav-link {
+  nav .nav-link {
     font-size: 0.5em !important;
     letter-spacing: normal !important;
   }
-  h6 {
+  nav h6 {
     font-size: 0.6em !important;
   }
 }
