@@ -238,6 +238,12 @@
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
@@ -327,7 +333,7 @@
 }
 
 .navbar .nav {
-  background-color: rgba(5, 82, 108, 0.6);
+  background-color: rgba(5, 82, 108, 0.6) !important;
 }
 
 .navbar .nav .nav-link {
@@ -339,7 +345,7 @@
 
 .navbar .active {
   color: azure !important;
-  font-size: 0.9em;
+  font-weight: 700 !important;
 }
 
 .navbar .nav-link:hover {

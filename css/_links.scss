@@ -2,7 +2,7 @@
   margin-top: -35px !important;
 
   .nav {
-    background-color: $colour-darkblue-opaque;
+    background-color: $colour-darkblue-opaque !important;
 
     .nav-link {
       color: $colour-text;
@@ -14,7 +14,7 @@
 
   .active {
     color: $colour-general !important;
-    font-size: 0.9em;
+    font-weight: 700 !important;
   }
 
   .nav-link:hover {
