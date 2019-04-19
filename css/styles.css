@@ -1,81 +1,81 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 .slide1 {
-  background-image: url("./images/spain.jpg");
+  background-image: url("../images/spain.jpg");
   background-size: cover;
 }
 
 .slide2 {
-  background-image: url("./images/spain1.jpg");
+  background-image: url("../images/spain1.jpg");
   background-size: cover;
 }
 
 .slide3 {
-  background-image: url("./images/spain2.jpg");
+  background-image: url("../images/spain2.jpg");
   background-size: cover;
 }
 
 .slide4 {
-  background-image: url("./images/spain3.jpg");
+  background-image: url("../images/spain3.jpg");
   background-size: cover;
 }
 
 .slide5 {
-  background-image: url("./images/gas.jpg");
+  background-image: url("../images/gas.jpg");
   background-size: cover;
 }
 
 .slide6 {
-  background-image: url("./images/gas1.jpg");
+  background-image: url("../images/gas1.jpg");
   background-size: cover;
 }
 
 .slide7 {
-  background-image: url("./images/gas2.jpg");
+  background-image: url("../images/gas2.jpg");
   background-size: cover;
 }
 
 .slide8 {
-  background-image: url("./images/gas3.jpg");
+  background-image: url("../images/gas3.jpg");
   background-size: cover;
 }
 
 .slide9 {
-  background-image: url("./images/cul.jpg");
+  background-image: url("../images/cul.jpg");
   background-size: cover;
 }
 
 .slide10 {
-  background-image: url("./images/cul1.jpg");
+  background-image: url("../images/cul1.jpg");
   background-size: cover;
 }
 
 .slide11 {
-  background-image: url("./images/cul2.jpg");
+  background-image: url("../images/cul2.jpg");
   background-size: cover;
 }
 
 .slide12 {
-  background-image: url("./images/cul3.jpg");
+  background-image: url("../images/cul3.jpg");
   background-size: cover;
 }
 
 .slide13 {
-  background-image: url("./images/his.jpg");
+  background-image: url("../images/his.jpg");
   background-size: cover;
 }
 
 .slide14 {
-  background-image: url("./images/his1.jpg");
+  background-image: url("../images/his1.jpg");
   background-size: cover;
 }
 
 .slide15 {
-  background-image: url("./images/his2.jpg");
+  background-image: url("../images/his2.jpg");
   background-size: cover;
 }
 
 .slide16 {
-  background-image: url("./images/his3.jpg");
+  background-image: url("../images/his3.jpg");
   background-size: cover;
 }
 
@@ -406,7 +406,7 @@ main {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-image: url(./images/spain-back.jpg);
+  background-image: url("../images/spain-back.jpg");
   background-size: cover;
 }
 

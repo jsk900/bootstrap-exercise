@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-@import "./vars-mixins.scss";
-@import "./slides.scss";
-@import "./animations.scss";
-@import "./forms.scss";
-@import "./media-queries.scss";
-@import "./carousel.scss";
-@import "./links.scss";
+@import "../css/vars-mixins.scss";
+@import "../css/slides.scss";
+@import "../css/animations.scss";
+@import "../css/forms.scss";
+@import "../css/media-queries.scss";
+@import "../css/carousel.scss";
+@import "../css/links.scss";
 
 // Resets
 * {
@@ -51,7 +51,7 @@ main {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-image: url(./images/spain-back.jpg);
+  background-image: url($img-spain-back);
   background-size: cover;
 }
 
