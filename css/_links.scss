@@ -12,8 +12,8 @@
     }
   }
 
-  .active {
-    color: $colour-general !important;
+  li.active {
+    background-color: $colour-general-opaque !important;
     font-weight: 700 !important;
   }
 

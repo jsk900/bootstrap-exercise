@@ -10,6 +10,8 @@
     .navbar-toggler {
       border: none !important;
       outline: none !important;
+      color: $colour-text !important;
+      text-shadow: 2px 2px 4px gray;
     }
     .nav-link {
       font-size: 0.5em !important;
@@ -19,6 +21,9 @@
     h6 {
       font-size: 0.6em !important;
     }
+  }
+  li.active {
+    width: 100% !important;
   }
 }
 

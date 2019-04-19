@@ -1,87 +1,87 @@
 // Use Bootstrap container only for forms START
 .container {
-    width: 70%;
+  width: 70%;
+  height: 100%;
+  padding-top: 5%;
+
+  .formDiv {
     height: 100%;
-    padding-top: 5%;
+    background-color: $colour-darkblue-opaque;
+    border-radius: 50px;
 
-    .formDiv {
-        height: 100%;
-        background-color: $colour-darkblue-opaque;
-        border-radius: 50px;
-
-        h6 {
-            color: $colour-general;
-            width: 100%;
-            text-align: center;
-            padding-top: 15px;
-            text-decoration: underline;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            padding-top: 5%;
-
-            .form-control {
-                margin-left: 20px;
-                padding: 0;
-                width: 200px;
-                height: 25px;
-            }
-
-            .form-control::-webkit-input-placeholder {
-                color: $colour-blue;
-                padding-left: 5px;
-            }
-
-            .form-control:-moz-placeholder {
-                color: $colour-blue;
-                padding-left: 5px;
-            }
-
-            .form-control::-moz-placeholder {
-                color: $colour-blue;
-                padding-left: 5px;
-            }
-
-            .form-control:-ms-input-placeholder {
-                color: $colour-blue;
-                padding-left: 5px;
-            }
-
-            .form-control::-ms-input-placeholder {
-                color: $colour-blue;
-                padding-left: 5px;
-            }
-
-            .form-text {
-                padding: 10px 0;
-                color: $colour-general;
-                font-size: 0.7em;
-            }
-
-            .btn-change8 {
-                height: 50px;
-                width: 200px;
-                background-color: $colour-darkblue-opaque;
-                margin: 20px;
-                float: left;
-                border: 0px;
-                color: $colour-general;
-                box-shadow: 0 0 1px $colour-blue;
-                -webkit-transition-duration: 0.5s;
-                -webkit-box-shadow: 0px 0px 0 0 $colour-blue inset,
-                    0px 0px 0 0 $colour-blue inset;
-            }
-
-            .btn-change8:hover {
-                -webkit-box-shadow: 100px 0px 0 0 $colour-blue inset,
-                    -100px 0px 0 0 $colour-blue inset;
-            }
-        }
+    h6 {
+      color: $colour-general;
+      width: 100%;
+      text-align: center;
+      padding-top: 15px;
+      text-decoration: underline;
     }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 5%;
+
+      .form-control {
+        margin-left: 20px;
+        padding: 0;
+        width: 200px;
+        height: 25px;
+      }
+
+      .form-control::-webkit-input-placeholder {
+        color: $colour-blue;
+        padding-left: 5px;
+      }
+
+      .form-control:-moz-placeholder {
+        color: $colour-blue;
+        padding-left: 5px;
+      }
+
+      .form-control::-moz-placeholder {
+        color: $colour-blue;
+        padding-left: 5px;
+      }
+
+      .form-control:-ms-input-placeholder {
+        color: $colour-blue;
+        padding-left: 5px;
+      }
+
+      .form-control::-ms-input-placeholder {
+        color: $colour-blue;
+        padding-left: 5px;
+      }
+
+      .form-text {
+        padding: 10px 0;
+        color: $colour-general;
+        font-size: 0.7em;
+      }
+
+      .btn-change8 {
+        height: 50px;
+        width: 200px;
+        background-color: $colour-darkblue-opaque;
+        margin: 20px;
+        float: left;
+        border: 0px;
+        color: $colour-general;
+        box-shadow: 0 0 1px $colour-text;
+        -webkit-transition-duration: 0.5s;
+        -webkit-box-shadow: 0px 0px 0 0 $colour-text inset,
+          0px 0px 0 0 $colour-text inset;
+      }
+
+      .btn-change8:hover {
+        -webkit-box-shadow: 100px 0px 0 0 $colour-text inset,
+          -100px 0px 0 0 $colour-text inset;
+      }
+    }
+  }
 }
 
 // END
