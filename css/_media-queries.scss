@@ -1,5 +1,5 @@
 // Navigation
-@media (max-width: 991px) and (min-width: 320px) {
+@media (max-width: 991px) and (min-width: 300px) {
   nav {
     width: 100px !important;
     display: flex !important;
@@ -17,13 +17,26 @@
       font-size: 0.5em !important;
       letter-spacing: normal !important;
     }
-
-    h6 {
-      font-size: 0.6em !important;
-    }
   }
   li.active {
     width: 100% !important;
+  }
+
+  .formDiv {
+    h6 {
+      font-size: 0.7em !important;
+      // text-align: center !important;
+      padding: 5px 20px !important;
+    }
+
+    .form-control {
+      width: 150px !important;
+      height: 20px !important;
+    }
+    .btn-change8 {
+      width: 170px !important;
+      height: 30px !important;
+    }
   }
 }
 

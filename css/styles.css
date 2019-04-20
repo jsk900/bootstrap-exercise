@@ -212,6 +212,7 @@
   padding: 10px 0;
   color: azure;
   font-size: 0.7em;
+  text-align: center;
 }
 
 .container .formDiv .form-group .btn-change8 {
@@ -232,7 +233,7 @@
   -webkit-box-shadow: 100px 0px 0 0 #1f1e1e inset, -100px 0px 0 0 #1f1e1e inset;
 }
 
-@media (max-width: 991px) and (min-width: 320px) {
+@media (max-width: 991px) and (min-width: 300px) {
   nav {
     width: 100px !important;
     display: -webkit-box !important;
@@ -259,11 +260,20 @@
     font-size: 0.5em !important;
     letter-spacing: normal !important;
   }
-  nav h6 {
-    font-size: 0.6em !important;
-  }
   li.active {
     width: 100% !important;
+  }
+  .formDiv h6 {
+    font-size: 0.7em !important;
+    padding: 5px 20px !important;
+  }
+  .formDiv .form-control {
+    width: 150px !important;
+    height: 20px !important;
+  }
+  .formDiv .btn-change8 {
+    width: 170px !important;
+    height: 30px !important;
   }
 }
 
